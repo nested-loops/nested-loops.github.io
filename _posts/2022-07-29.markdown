@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "せっせとGitHubPagesをこしらえた"
+date:   2022-07-29 14:34:25
+categories: jekyll
+tags: featured
+image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
+---
+[GitHub DocsのGitHub Pages](https://docs.github.com/ja/pages)の導きでJekyllを順調に導入してGitHubPagesを作成しました。
+いままで技術的なものは自分自身のためだけに完全ローカルで書いていたのですが、いよいよ現職もコンフォートゾーンで転職も視野に入れ始めたのでネットの海に流しておくことにしました。ここに纏めておけば自分も探す手間が省けるというのもメリット。
+GitHub Docsが優秀だったおかげで導入は問題ないし、HTMLもCSSも仕事で使いまくるので特段つまりは無かったんですが、途中で何でか日本語が変な化け（？）方をするということに気付いて、そもそも何コイツ？　とコピって検索掛けようとすると、ペーストすると正常に見える。
+![2022-07-29-img_mojibake](/assets/images/2022-07-29-img_mojibake.jpg)
+
+ということで、コピペのおかげで指定フォントが原因だと気付きました。コピペの前に気付くべきでした。
+HTML、CSSを作成する時って最初に自分が気に入ってるフォントを導入するので初体験だった。
+あとは今更ながらMarkdownの簡素さに感動したくらい。
