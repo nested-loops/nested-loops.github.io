@@ -4,7 +4,20 @@ title: About
 permalink: /about/
 ---
 
-SenaYamato[@nestedloop_](https://twitter.com/nestedloop_) の技術ブログ（というよりメモ）置き場。
+SenaYamato[@nestedloop_](https://twitter.com/nestedloop_) の技術ブログ（というよりメモ）置き場。あとは普通のブログもたまに。
 新人だったころから溜めてたものをここに移すので技術的に古いものもあったりします。
+（日付は当時の日付で移しています。）
 
-仕事では長らくJavaを触っています。
+
+<h2>やれること</h2>
+業務系システムメインにいろいろとやっています。
+仕事では長らくJavaに触れています。DB関係はOracleがほとんど。
+最近になってPostgreSQLをちょっと使うようになっている。
+あとは状況に応じてC#やらCやらたまにC++やら。
+HTML、CSS、javascriptは普通に触れます。
+（仕事によってはいまだにVB6を触ったり、.NETを触ったり、VBAをメンテしたり……。）
+サーバ～アプリまで一通り経験があります。
+最近は個人的な趣味でPythonを勉強し始めました。
+
+<h2>好きなこと</h2>
+読書、散歩、演奏、料理
