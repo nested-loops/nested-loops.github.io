@@ -22,8 +22,8 @@ author_image: "/assets/images/icon.png"
 
 paginate:	5
 
-url: "http://myblog.***.***" # the base hostname & protocol for your site
-baseurl: ""
+url: "https://nested-loops.github.io"
+baseurl: "/senayamato"
 #used to display twitter cards
 twitter_handle: '@nestedloop_'
 
