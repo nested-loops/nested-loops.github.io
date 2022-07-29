@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "TEST"
+title:  "せっせとGitHubPagesをこしらえた"
 date:   2022-07-28 16:34:25
-categories: jekyll update
+categories: githubpages
 tags: featured
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
 ---
