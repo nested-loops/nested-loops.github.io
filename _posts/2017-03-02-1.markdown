@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "[oracle]NESTED LOOPSとHASH JOIN"
+title:  "【oracle】NESTED LOOPSとHASH JOIN"
 date:   2017-03-02 16:24:23
-categories: blog
+categories: oracle
 tags: featured
 image: /assets/article_images/desktop.jpg
 ---
 ※2017年に書いたものを2022年に移したものです。
+
 　当時は確か10gを使っていたと思います。
 
 ##ネステッド・ループ結合(NESTED LOOPS)
