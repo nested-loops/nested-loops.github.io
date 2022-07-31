@@ -4,9 +4,9 @@ title:  "せっせとGitHubPagesをこしらえた"
 date:   2022-07-28 16:34:25
 categories: blog
 tags: featured
-image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.JPG
+image: /assets/article_images/desktop.jpg
 ---
-[GitHub DocsのGitHub Pages](https://docs.github.com/ja/pages)の導きでJekyllを順調に導入してGitHubPagesを作成しました。
+[GitHub Docs-GitHub Pages](https://docs.github.com/ja/pages)の導きでJekyllを順調に導入してGitHubPagesを作成しました。
 
 いままで技術的なものは自分自身のためだけに完全ローカルで書いていたのですが、いよいよ現職もコンフォートゾーンで転職も視野に入れ始めたのでネットの海に流しておくことにしました。ここに纏めておけば自分も探す手間が省けるというのもメリット。
 
@@ -17,5 +17,5 @@ GitHub Docsが優秀だったおかげで導入は問題ないし、HTMLもCSS�
 ということで、コピペのおかげで指定フォントが原因だと気付く……。しょうもねえ……。
 
 HTML、CSSを作成する時って最初に自分が気に入ってるフォントを導入するので初体験だった。
-
-あとは今更ながらMarkdownの簡素さに感動したくらい。
+あとレスポンシブ風でたまにレスポンシブになってないところ（画像サイズとか）を微調整して一旦完成。
+今更ながらMarkdownの簡素さに感動したくらい。今更。
