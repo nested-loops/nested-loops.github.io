@@ -33,10 +33,10 @@ BEGIN
 END;
 ```
 
-### シーケンス最終番号
+### シーケンス最終番号取得
 
 ```SQL
-SELECT  sequence_name
-    ,   last_number
-FROM 		user_sequences
+SELECT	sequence_name
+    ,		last_number
+FROM		user_sequences
 ```
