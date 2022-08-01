@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "読書リスト"
-date:   2022-08-01 9:22:40
+date:   2022-08-01 0:22:40
 categories: blog
 tags: featured
 image: /assets/article_images/desktop.jpg
