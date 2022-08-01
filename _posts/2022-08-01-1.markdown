@@ -6,11 +6,11 @@ categories: blog
 tags: featured
 image: /assets/article_images/desktop.jpg
 ---
-読んだ本と積んでる本
+読んだ本。定期的にまとめてUPDATE。
 
 ただし物理的な本棚に入っている分のみ。物語のタイトルではなく本のタイトルです。技術書関係はのぞく。
 
-順不同
+順不同（最終更新日2022/08/01)
 
 ### 読んだ本
 
