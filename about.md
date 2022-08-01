@@ -11,7 +11,10 @@ SenaYamato[@nestedloop_](https://twitter.com/nestedloop_) の技術ブログ（�
 
 ### やれること
 業務系システムメインにいろいろとやっています。
-仕事では長らくJavaに触れています。DB関係はOracleがほとんど。
+
+入社から3年くらいは大手企業さんのシステムWeb化などを担当。(VB6→Java)
+
+そのため仕事では長らくJavaに触れています。DB関係はOracleがほとんど。
 最近になってPostgreSQLをちょっと使うようになっている。
 
 あとは状況に応じてC#やらCやらたまにC++やら。
