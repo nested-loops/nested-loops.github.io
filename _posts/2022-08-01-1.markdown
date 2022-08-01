@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "読書リスト"
-date:   2022-08-01 12:22:40
+date:   2022-08-01 9:22:40
 categories: blog
 tags: featured
 image: /assets/article_images/desktop.jpg
 ---
 読んだ本と積んでる本
 
-ただし物理的な本棚に入っている分のみ。物語のタイトルではなく本のタイトルです。
+ただし物理的な本棚に入っている分のみ。物語のタイトルではなく本のタイトルです。技術書関係はのぞく。
 
 順不同
 
