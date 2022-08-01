@@ -3,6 +3,8 @@ layout: page
 title: Categories
 permalink: /categories/
 ---
+カテゴリ別記事
+
 
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
