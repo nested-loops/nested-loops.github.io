@@ -37,6 +37,6 @@ END;
 
 ```SQL
 SELECT	sequence_name
-    ,		last_number
-FROM		user_sequences
+    , last_number
+FROM  user_sequences
 ```

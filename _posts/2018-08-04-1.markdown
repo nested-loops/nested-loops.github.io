@@ -13,7 +13,7 @@ image: /assets/article_images/desktop.jpg
 テーブルのカラム並べて比べたいテーブルのカラムをマイナスしてるだけ
 
 ```SQL
-SELECT
+	SELECT
 		  TABLE_NAME
 		, COLUMN_NAME
 		, '1_NI_SHIKA_NAI'

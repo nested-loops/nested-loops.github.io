@@ -32,6 +32,16 @@ layout: default
   {% for posts_by_tag in site.tags %}
     {% assign tag_names = tag_names | push: posts_by_tag.first %}
   {% endfor %}
+  <h3 id="{{ tag_name }}">
+        {{ tag_name | capitalize | replace: "_", " " }}
+      </h3>
+
+      {% for post in site.tags[tag_name] %}
+        <a href="{{ post.url | prepend: baseurl }}">
+          {{ post.title }}
+        </a>
+      {% endfor %}
+    {% endfor %}
     {% if site.tags.featured %}
     <h5 class="index-headline featured"><span>KIJI</span></h5>
 
