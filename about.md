@@ -11,15 +11,12 @@ SenaYamato[@nestedloop_](https://twitter.com/nestedloop_) の技術ブログ（�
 
 ### やれること
 業務系システムメインにいろいろとやっています。
-
 仕事では長らくJavaに触れています。DB関係はOracleがほとんど。
-
 最近になってPostgreSQLをちょっと使うようになっている。
 
 あとは状況に応じてC#やらCやらたまにC++やら。
 
-HTML、CSS、javascriptは普通に触れます。
-（仕事によってはいまだにVB6を触ったり、.NETを触ったり、VBAをメンテしたり……。）
+HTML、CSS、javascriptは普通に触れます。（仕事によってはいまだにVB6を触ったり、.NETを触ったり、VBAをメンテしたり……。）
 
 サーバ～アプリ（バックエンド～フロントエンド）まで一通り経験があります。
 
