@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "【oracle】テーブル間のカラム差分出す"
+date:   2018-08-04 17:14:28
+categories: oracle
+tags: featured
+image: /assets/article_images/desktop.jpg
+---
+※2018年に書いたものを2022年に移したものです。
+
+　当時は確か10gを使っていたと思います。
+
+テーブルのカラム並べて比べたいテーブルのカラムをマイナスしてるだけ
+
+```SQL
+SELECT
+		  TABLE_NAME
+		, COLUMN_NAME
+		, '1_NI_SHIKA_NAI'
+	FROM
+		  ALL_TAB_COLUMNS
+	WHERE
+      TABLE_NAME = 'TABLE1'
+MINUS
+	SELECT
+		  TABLE_NAME
+		, COLUMN_NAME
+		, '1_NI_SHIKA_NAI'
+	FROM
+		  ALL_TAB_COLUMNS
+  WHERE
+      TABLE_NAME = 'TABLE2'
+UNION ALL
+	SELECT
+		  TABLE_NAME
+		, COLUMN_NAME
+		, '2_NI_SHIKA_NAI'
+	FROM
+		  ALL_TAB_COLUMNS
+	WHERE
+      TABLE_NAME = 'TABLE2'
+MINUS
+	SELECT
+		  TABLE_NAME
+		, COLUMN_NAME
+		, '2_NI_SHIKA_NAI'
+	FROM
+		  ALL_TAB_COLUMNS
+	WHERE
+      TABLE_NAME = 'TABLE1'
+```

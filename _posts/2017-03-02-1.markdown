@@ -18,7 +18,7 @@ image: /assets/article_images/desktop.jpg
 
 ▽SELECT STATEMENT
 
-　▽NSETED LOOPS
+　▽NESTED LOOPS
 
 ```SQL
 SELECT *

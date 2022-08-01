@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "【oracle】シーケンス関係"
+date:   2018-09-14 12:19:19
+categories: oracle
+tags: featured
+image: /assets/article_images/desktop.jpg
+---
+※2018年に書いたものを2022年に移したものです。
+
+　当時は確か10gを使っていたと思います。
+
+### シーケンス消す
+
+PLSQLで。
+
+全部消すときはシーケンス名指定しない。
+
+```SQL
+DECLARE
+    CURSOR c_sequence
+    IS
+    SELECT  object_name
+    FROM    user_objects
+    WHERE   object_type = 'SEQUENCE'
+    AND     object_name = 'けすシーケンス名';
+    l_sql   VARCHAR2(1024);
+BEGIN
+    FOR r_sequence IN c_sequence LOOP
+        l_sql := 'DROP SEQUENCE ' || r_sequence.object_name;
+        EXECUTE IMMEDIATE l_sql;
+    END LOOP;
+END;
+```
+
+### シーケンス最終番号
+
+```SQL
+SELECT  sequence_name
+    ,   last_number
+FROM 		user_sequences
+```
