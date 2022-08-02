@@ -6,7 +6,6 @@ categories: JavaScript css IE HTML
 tags: featured
 image: /assets/article_images/desktop.jpg
 ---
-
 ### えっまだIE動かしたいの！？！？
 
 古の時代から（IE5から？）動いているWebシステムがEdgeで使ったら変だという問い合わせが来たのでいろいろみている。
