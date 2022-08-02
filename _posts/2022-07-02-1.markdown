@@ -2,15 +2,15 @@
 layout: post
 title:  "ほんこわ/まだIE使いたいってよ"
 date:   2022-07-02 20:24:23
-categories: JavaScript css IE HTML
+categories: IE
 tags: featured
 image: /assets/article_images/desktop.jpg
 ---
+2022年の7月にIEというタグをつけて技術ブログを書くことさえ憚るのですが、古の時代から（IE5から？）動いているWebシステムがEdgeで使ったら変だという問い合わせが来たのでいろいろみている。
+
 ### えっまだIE動かしたいの！？！？
 
-古の時代から（IE5から？）動いているWebシステムがEdgeで使ったら変だという問い合わせが来たのでいろいろみている。
-
-IEが使えなくなったのでEdgeで使用しているらしい。
+という声が出てしまったんですが、どうやら現在はIEが使えなくなったのでEdgeで使用しているらしい。
 
 本当にあった怖い話。
 
