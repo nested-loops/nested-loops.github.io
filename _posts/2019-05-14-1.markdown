@@ -1,0 +1,84 @@
+---
+layout: post
+title:  "【oracle】トレース実行"
+date:   2019-05-14 19:19:19
+categories: oracle
+tags: featured
+image: /assets/article_images/desktop.jpg
+---
+### 実行
+
+PLSQLで。
+
+```SQL
+DECLARE
+	run_id          NUMBER;
+BEGIN
+	dbms_profiler.start_profiler(TO_CHAR(SYSDATE, 'YYYYMMDDHH24MISS'), 'こめんと', run_id);
+	なんか実行するプロシージャとか
+	dbms_profiler.stop_profiler;
+	dbms_output.put_line(run_id);
+END;
+
+```
+
+### 実行後
+
+PLSQL_PROFILER_XXXテーブルに情報が入ってるので漁る
+
+###かかった時間
+
+```SQL
+SELECT  INFO.line AS "行"
+    ,   INFO.text AS "コード"
+    ,   P.max_time * POWER(10, -9) AS "コード最長実行時間(秒)"
+    ,   P.rank "ランキング"
+     FROM
+         (   SELECT  A.*
+             FROM    all_source A
+             WHERE   EXISTS
+                         (   SELECT  1
+                             FROM    plsql_profiler_units ppu
+                             WHERE   A.type = ppu.unit_type
+                                 AND A.name = ppu.unit_name
+                                 AND ppu.runid = :runid		//欲しい情報のRUNID
+                         )
+         ) INFO
+     INNER JOIN
+         (   SELECT  PPD.runid
+                 ,   PPD.unit_number
+                 ,   PPD.line# line
+                 ,   PPD.total_occur		//呼ばれた回数
+                 ,   PPD.total_time
+                 ,   PPD.min_time			//最小TIME
+                 ,   PPD.max_time			//最大TIME
+                 ,   ppu.unit_type
+                 ,   ppu.unit_owner
+                 ,   ppu.unit_name
+                 ,   ppu.unit_timestamp
+                 ,   ppu.total_time unit_total_time
+                 ,   ppr.related_run
+                 ,   ppr.run_owner
+                 ,   ppr.run_date
+                 ,   ppr.run_comment
+                 ,   ppr.run_total_time
+                 ,   ppr.run_system_info
+                 ,   ppr.run_comment1
+                 ,   DENSE_RANK()OVER(ORDER BY PPD.max_time DESC) rank
+             FROM    plsql_profiler_data PPD
+             INNER JOIN
+                     plsql_profiler_units ppu
+                 ON  PPD.runid = ppu.runid
+                 AND PPD.unit_number = ppu.unit_number
+             INNER JOIN
+                     plsql_profiler_runs ppr
+                 ON  PPD.runid = ppr.runid
+             WHERE   PPD.runid = :runid
+         ) P
+         ON  INFO.type = P.unit_type
+         AND INFO.name = P.unit_name
+         AND INFO.line = P.line
+     WHERE P.rank <= 10
+     ORDER BY
+             P.rank
+```
