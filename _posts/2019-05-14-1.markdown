@@ -29,19 +29,19 @@ PLSQL_PROFILER_XXXテーブルに情報が入ってるので漁る
 ###かかった時間
 
 ```SQL
-SELECT  INFO.line AS "行"
-    ,   INFO.text AS "コード"
-    ,   P.max_time * POWER(10, -9) AS "コード最長実行時間(秒)"
-    ,   P.rank "ランキング"
+SELECT  INFO.line
+    ,   INFO.text
+    ,   P.max_time * POWER(10, -9) AS "コード最大実行時間"
+    ,   P.rank 
      FROM
          (   SELECT  A.*
              FROM    all_source A
              WHERE   EXISTS
                          (   SELECT  1
-                             FROM    plsql_profiler_units ppu
-                             WHERE   A.type = ppu.unit_type
-                                 AND A.name = ppu.unit_name
-                                 AND ppu.runid = :runid		//欲しい情報のRUNID
+                             FROM    plsql_profiler_units PPU
+                             WHERE   A.type = PPU.unit_type
+                                 AND A.name = PPU.unit_name
+                                 AND PPU.runid = :runid		//欲しい情報のRUNID
                          )
          ) INFO
      INNER JOIN
