@@ -52,27 +52,27 @@ SELECT  INFO.line AS "行"
                  ,   PPD.total_time
                  ,   PPD.min_time			//最小TIME
                  ,   PPD.max_time			//最大TIME
-                 ,   ppu.unit_type
-                 ,   ppu.unit_owner
-                 ,   ppu.unit_name
-                 ,   ppu.unit_timestamp
-                 ,   ppu.total_time unit_total_time
-                 ,   ppr.related_run
-                 ,   ppr.run_owner
-                 ,   ppr.run_date
-                 ,   ppr.run_comment
-                 ,   ppr.run_total_time
-                 ,   ppr.run_system_info
-                 ,   ppr.run_comment1
+                 ,   PPU.unit_type
+                 ,   PPU.unit_owner
+                 ,   PPU.unit_name
+                 ,   PPU.unit_timestamp
+                 ,   PPU.total_time unit_total_time
+                 ,   PPR.related_run
+                 ,   PPR.run_owner
+                 ,   PPR.run_date
+                 ,   PPR.run_comment
+                 ,   PPR.run_total_time
+                 ,   PPR.run_system_info
+                 ,   PPR.run_comment1
                  ,   DENSE_RANK()OVER(ORDER BY PPD.max_time DESC) rank
              FROM    plsql_profiler_data PPD
              INNER JOIN
-                     plsql_profiler_units ppu
-                 ON  PPD.runid = ppu.runid
-                 AND PPD.unit_number = ppu.unit_number
+                     plsql_profiler_units PPU
+                 ON  PPD.runid = PPU.runid
+                 AND PPD.unit_number = PPU.unit_number
              INNER JOIN
-                     plsql_profiler_runs ppr
-                 ON  PPD.runid = ppr.runid
+                     plsql_profiler_runs PPR
+                 ON  PPD.runid = PPR.runid
              WHERE   PPD.runid = :runid
          ) P
          ON  INFO.type = P.unit_type
