@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-SenaYamato[@nestedloop_](https://twitter.com/nestedloop_) の技術ブログ（というよりメモ）置き場。あとは普通のブログもたまに。
+Sena[@nestedloop_](https://twitter.com/nestedloop_) の技術ブログ（というよりメモ）置き場。あとは普通のブログもたまに。
 新人だったころから溜めてたものをここに移すので技術的に古いものもあったりします。
 （日付は当時の日付で移しています。）
 
