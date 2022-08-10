@@ -4,7 +4,7 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "SenaYamato Blog"
+title: "Sena Blog"
 description: > # this means to ignore newlines until "email:"
    技術メモだったりしょうもないことだったり
 
@@ -16,8 +16,8 @@ float_logo: true # true, false (default)
 # blog cover
 cover: "/assets/images/top-cover.jpg"
 
-name: 'SenaYamato'
-author: 'SenaYamato'
+name: 'Sena'
+author: 'Sena'
 author_image: "/assets/images/icon.png"
 
 paginate:	5
